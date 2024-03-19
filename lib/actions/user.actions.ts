@@ -15,6 +15,8 @@ export async function createUser(user: CreateUserParams) {
 
     return JSON.parse(JSON.stringify(newUser));
   } catch (error) {
+    console.log("coming here in actions");
+
     handleError(error);
   }
 }
